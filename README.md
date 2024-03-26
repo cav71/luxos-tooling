@@ -36,3 +36,37 @@ The HealthChecker uses poetry as a package manager, to install project dependenc
 Feel free to explore and customize these tools to suit your specific needs. If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 You can find LuxOS API documentation [here](https://docs.luxor.tech/firmware/api/intro).
+
+
+## Development
+
+### Initial setup
+You need to create a new virtual env and install few packages in it:
+
+```bash
+# create a virtual env
+python -m venv venv
+
+# activate it
+(dos)
+.\venv\Scripts\activate
+(*nix)
+source ./venv/bin/activate
+
+# install all packages
+pip install -r requirements.txt
+
+# (otional) enable pre-commit
+pre-commit install
+```
+### Development
+Every time you restart a shell/cmd.exe:
+
+```bash
+# activate the virtual env
+(for dos)
+.\venv\Scripts\activate
+(for *nix)
+source ./venv/bin/activate
+```
+And that's all, happy coding!
